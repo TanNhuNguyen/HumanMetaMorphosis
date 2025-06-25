@@ -45,7 +45,8 @@ It walks you through setting up a Python development environment suitable for bi
 
   ```bash
   python --version
-
+  ```
+	
 ## 2. Installation of Visual Studio Code on Microsoft Windows
 
 - **Step 1:** Download the Visual Studio Code (VS Code) installer for Windows from the official website:  
@@ -132,6 +133,7 @@ To run your Python script, you'll need to use Windows Terminal from the project 
 ```bash
 cd path\to\your\project
 ```
+
 #### Option 2: Open Terminal from File Explorer
 
 If you're not using Visual Studio Code, or prefer using the standalone Windows Terminal:
