@@ -12,6 +12,7 @@ It walks you through setting up a Python development environment suitable for bi
 - Installation of Visual Studio Code on Microsoft Windows  
 - Installation of Windows Terminal on Microsoft Windows  
 - Examples of how to install numpy or other packages for python using pip in Terminal
+- How to create a *.py file inside a folder and begin to code with Visual Studio Code and run Using Windows Terminal
 
 ## 1. Installation of Python on Microsoft Windows
 
@@ -95,3 +96,63 @@ The Windows Terminal provides a modern, fast, and flexible terminal interface fo
   Click **Save** to apply changes.
 
 Windows Terminal is now ready for use with Python, Git, and other development tools throughout this book.
+
+## 4. How to Create a `.py` File and Run It Using Visual Studio Code and Windows Terminal
+
+This section guides you through creating a Python file inside a folder, editing it using **Visual Studio Code (VS Code)**, and running it with **Windows Terminal**.
+
+### Step 1: Create a Folder for Your Project
+- Navigate to the location where you want to create the project.
+- Right-click and choose **New > Folder**, then name it (e.g., `MyPythonApp`).
+- Open the folder in VS Code:
+  - Right-click the folder and select **“Open with Code”**, or
+  - Open VS Code and choose **File > Open Folder...**
+
+### Step 2: Create a `.py` File
+- In VS Code, click the **Explorer** icon (top-left).
+- Click the **"New File"** icon or right-click inside the folder and select **"New File"**.
+- Name the file something like: `main.py`.
+
+### Step 3: Write Some Python Code
+Inside `main.py`, write a simple script like:
+
+```python
+print("Hello from Visual Studio Code!")
+```
+
+### Step 4: Open Windows Terminal in the Project Folder
+
+To run your Python script, you'll need to use Windows Terminal from the project directory.
+
+#### Option 1: Open Terminal in VS Code
+- Press `` Ctrl + ` `` (the backtick key) in Visual Studio Code to open the integrated terminal.
+- It should automatically open in the project folder. If not, navigate to your folder using:
+
+```bash
+cd path\to\your\project
+```
+### Option 2: Open Terminal from File Explorer
+
+If you're not using Visual Studio Code, or prefer using the standalone Windows Terminal:
+
+1. Open **File Explorer** and navigate to your project folder (e.g., `MyPythonApp`).
+2. Right-click inside the folder (but not on a file).
+3. Select **"Open in Terminal"** from the context menu.
+
+This will launch Windows Terminal directly in the folder where your Python file is located.
+
+You can now list the files in the directory to confirm your `.py` file exists:
+
+```bash
+dir
+```
+
+### Step 5: Run the Python Script
+
+With your terminal open in the project folder and `main.py` ready, it’s time to run your first Python script!
+
+#### Run the Script
+Type the following command and press **Enter**:
+
+```bash
+python main.py
