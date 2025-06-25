@@ -131,7 +131,7 @@ To run your Python script, you'll need to use Windows Terminal from the project 
 ```bash
 cd path\to\your\project
 ```
-### Option 2: Open Terminal from File Explorer
+#### Option 2: Open Terminal from File Explorer
 
 If you're not using Visual Studio Code, or prefer using the standalone Windows Terminal:
 
