@@ -13,6 +13,7 @@ It walks you through setting up a Python development environment suitable for bi
 - Installation of Windows Terminal on Microsoft Windows  
 - Examples of how to install numpy or other packages for python using pip in Terminal
 - How to create a *.py file inside a folder and begin to code with Visual Studio Code and run Using Windows Terminal
+- Python project organization types
 
 ## 1. Installation of Python on Microsoft Windows
 
@@ -156,3 +157,11 @@ Type the following command and press **Enter**:
 
 ```bash
 python main.py
+```
+
+## 6. Python Project Organization Types
+
+Organizing your Python code properly is essential for readability, scalability, and maintainability—especially as your projects grow in complexity. In this section, we introduce the common ways Python projects are structured, including flat scripts, modular packages, and research-oriented layouts used in AI and biomedical applications.
+
+🗂️ **Note:** Full details and best practices for organizing Python projects are discussed extensively in **Section 1.1.6 of this book**. Please refer to that section for diagrams, folder structures, and annotated examples tailored to your development needs.
+
