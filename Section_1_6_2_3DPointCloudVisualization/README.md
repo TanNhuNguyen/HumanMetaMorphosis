@@ -1,4 +1,4 @@
-# Section 1.6 – Representing 3D Shapes in Python with NumPy
+# Section 1.6.2 - 3-D Point Cloud Visualization
 
 This module introduces the fundamentals of representing 3D anatomical structures using Python and NumPy arrays. As part of the book  
 "Human Anatomical Shape Metamorphosis: Statistical Shape Modelling, AI-Driven Prediction, and Applications"  
