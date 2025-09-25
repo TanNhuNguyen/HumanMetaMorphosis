@@ -1,15 +1,60 @@
-# Section 4.5.3 – Statistical Skull Shape Modeling
+# Statistical Pelvis Shape Mesh Modeling
 
-This module introduces statistical shape modeling (SSM) techniques for analyzing and synthesizing 3D skull geometries. As part of  
-"Human Anatomical Shape Metamorphosis: Statistical Shape Modelling, AI-Driven Prediction, and Applications"  
-by Tan-Nhu Nguyen and Tien-Tuan Dao (ISTE Group, London, 2025), it demonstrates how to construct low-dimensional models that capture population-level variability in cranial morphology.
+This project demonstrates how to build **statistical models of pelvis shapes** using 3D mesh data. It focuses on analyzing collections of pelvis meshes, extracting features, and applying statistical techniques such as Principal Component Analysis (PCA) to capture shape variability. The project is designed as a resource for medical imaging, biomechanics, anthropology, and computational geometry.
 
-These models enable applications such as shape interpolation, classification, reconstruction from sparse data, and personalized cranial implant design.
+## Overview
 
-## Short Contents
+Pelvic bone morphology varies across individuals due to factors such as sex, age, and population differences. By analyzing multiple pelvis meshes together, statistical modeling can capture these variations and represent them in a compact, interpretable way.  
 
-- Preprocessing and aligning skull meshes using rigid or non-rigid registration  
-- Establishing dense anatomical correspondences across a training set  
-- Building statistical shape models using PCA or other dimensionality reduction techniques  
-- Visualizing principal modes of skull shape variation  
-- Generating new skull shapes or fitting models to partial or landmark-based observations
+This project shows how to:
+
+- Load and preprocess pelvis meshes  
+- Align meshes into a common coordinate system  
+- Extract geometric features and landmarks  
+- Build a statistical shape model using PCA or similar methods  
+- Visualize mean pelvis shapes and modes of variation  
+
+## Features
+
+- **Mesh Preprocessing**  
+  Import pelvis meshes from `.ply`, `.stl`, or `.obj` formats.  
+  Normalize, align, and clean meshes for consistency.  
+
+- **Feature Extraction**  
+  Compute geometric descriptors such as surface area, volume, centroid, and curvature.  
+  Identify anatomical landmarks for correspondence across samples.  
+
+- **Statistical Shape Modeling**  
+  Apply PCA to capture dominant modes of pelvis shape variation.  
+  Generate mean pelvis meshes and visualize shape changes along principal components.  
+
+- **Visualization**  
+  Render pelvis meshes interactively with overlays of statistical features.  
+  Compare original pelvises with reconstructed or mean shapes.  
+
+- **Export**  
+  Save statistical models and reconstructed meshes for further analysis.  
+
+## Libraries Used
+
+- [Open3D](http://www.open3d.org/) – for mesh processing and visualization  
+- [Trimesh](https://trimsh.org/) – for geometry handling and analysis  
+- [PyVista](https://docs.pyvista.org/) – for interactive 3D visualization  
+- [NumPy](https://numpy.org/) – for numerical operations  
+- [SciPy](https://scipy.org/) – for statistical computations  
+- [scikit-learn](https://scikit-learn.org/) – for PCA and machine learning methods  
+
+## Example Workflows
+
+- Load a dataset of pelvis meshes and align them into a common orientation.  
+- Compute the mean pelvis shape from the dataset.  
+- Apply PCA to extract the top modes of variation in pelvis geometry.  
+- Visualize how pelvis shape changes along the first few principal components.  
+- Save reconstructed meshes for further study or visualization.  
+
+## Getting Started
+
+To run the examples, install the required libraries:
+
+```bash
+pip install open3d trimesh pyvista numpy scipy scikit-learn

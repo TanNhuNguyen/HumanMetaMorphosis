@@ -1,15 +1,50 @@
-# Section 3.4.3 – Voxelisation of 3D Shapes
+# Voxelization of 3D Shapes
 
-This module introduces the concept and implementation of voxelisation—the process of converting continuous surface models into structured 3D grid representations. As part of  
-"Human Anatomical Shape Metamorphosis: Statistical Shape Modelling, AI-Driven Prediction, and Applications"  
-by Tan-Nhu Nguyen and Tien-Tuan Dao (ISTE Group, London, 2025), this section provides readers with foundational tools to work with binary and signed voxel volumes suitable for morphometric measurements, deep learning, and simulation workflows.
+This project demonstrates how to convert **3D geometric shapes** into **voxel representations** using Python. Voxelization is the process of dividing a 3D object into a grid of small cubes (voxels), similar to how pixels represent 2D images. This technique is widely used in computer graphics, 3D modeling, scientific visualization, and machine learning applications.
 
-Voxelisation bridges geometric and volumetric representations, enabling shape abstraction, comparison, and volumetric data integration.
+## Overview
 
-## Short Contents
+Voxelization provides a way to approximate continuous 3D surfaces with discrete volumetric data. It is useful for tasks such as collision detection, physics simulations, shape analysis, and preparing data for deep learning models.  
 
-- Converting polygonal surface meshes to binary voxel grids  
-- Generating signed distance fields (SDF) from surface meshes  
-- Visualizing voxel volumes with matplotlib or 3D engines  
-- Exporting voxel grids for deep learning or shape statistics  
-- Discussing resolution trade-offs and memory-efficient formats
+This project shows how to:
+
+- Generate simple 3D shapes such as spheres, cubes, and cylinders  
+- Convert these shapes into voxel grids  
+- Visualize voxelized shapes interactively  
+- Save voxel data for later use in analysis or modeling  
+
+## Features
+
+- **Shape Generation**  
+  Create basic 3D primitives (sphere, cube, cylinder) as meshes or point clouds.  
+
+- **Voxelization**  
+  Convert meshes into voxel grids with adjustable resolution.  
+  Explore how voxel size affects the accuracy and detail of the representation.  
+
+- **Visualization**  
+  Render voxelized shapes in 3D using libraries like Open3D or PyVista.  
+  Compare original meshes with their voxelized versions.  
+
+- **Data Export**  
+  Save voxelized shapes for reuse in other applications or experiments.  
+
+## Libraries Used
+
+- [Open3D](http://www.open3d.org/) – for voxelization, mesh handling, and visualization  
+- [PyVista](https://docs.pyvista.org/) – for interactive 3D plotting  
+- [Trimesh](https://trimsh.org/) – for geometry processing  
+- [NumPy](https://numpy.org/) – for numerical operations  
+
+## Example Workflows
+
+- Generate a sphere mesh and voxelize it at different resolutions to see how detail changes.  
+- Voxelize a cube and visualize both the original mesh and the voxel grid side by side.  
+- Create a cylinder, voxelize it, and export the voxel data for further analysis.  
+
+## Getting Started
+
+To run the examples, install the required libraries:
+
+```bash
+pip install open3d pyvista trimesh numpy

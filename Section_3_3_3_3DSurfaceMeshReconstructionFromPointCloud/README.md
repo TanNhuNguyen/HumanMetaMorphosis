@@ -1,15 +1,42 @@
-# Section 3.3.3 – 3D Surface Mesh Reconstruction from Point Clouds
+# 3D Surface Mesh Reconstruction from Point Clouds
 
-This module guides readers through the process of reconstructing 3D surface meshes from point cloud data using Python. As part of  
-"Human Anatomical Shape Metamorphosis: Statistical Shape Modelling, AI-Driven Prediction, and Applications"  
-by Tan-Nhu Nguyen and Tien-Tuan Dao (ISTE Group, London, 2025), it lays the foundation for generating watertight or adaptive anatomical surfaces suitable for analysis, visualization, and simulation.
+This project demonstrates how to reconstruct **3D surface meshes** from raw **point cloud data** using Python. It provides practical examples of turning unstructured points into continuous surfaces, making the data easier to visualize, analyze, and use in downstream applications such as 3D modeling, simulation, or medical imaging.
 
-Utilizing tools such as Open3D and Trimesh, this section illustrates techniques like Poisson surface reconstruction and alpha shapes for converting noisy point sets into structured surface geometries.
+## Overview
 
-## Short Contents
+Point clouds are often captured by 3D scanners, LiDAR sensors, or generated from imaging data. While they represent the geometry of an object or scene, they lack explicit surface connectivity. Mesh reconstruction bridges this gap by creating a polygonal surface (usually triangles) that approximates the underlying shape.  
 
-- Preparing clean and uniform point cloud data for reconstruction  
-- Applying Poisson reconstruction to generate watertight meshes  
-- Using alpha shapes for detail-preserving surface fitting  
-- Visualizing and inspecting generated surface models  
-- Saving output meshes for downstream voxelization or morphometric analysis
+This project explores several reconstruction techniques, including:
+
+- **Alpha Shapes** – for generating watertight surfaces from point sets.  
+- **Ball Pivoting** – for rolling a virtual ball over points to form a mesh.  
+- **Poisson Surface Reconstruction** – for producing smooth, watertight surfaces from noisy data.  
+
+## Features
+
+- Load point clouds from `.ply` or `.pcd` files.  
+- Estimate normals required for surface reconstruction.  
+- Apply different reconstruction algorithms (Alpha Shapes, Ball Pivoting, Poisson).  
+- Visualize reconstructed meshes interactively.  
+- Save reconstructed meshes to disk in formats such as `.ply` or `.stl`.  
+
+## Libraries Used
+
+- [Open3D](http://www.open3d.org/) – for point cloud processing, normal estimation, and mesh reconstruction  
+- [Trimesh](https://trimsh.org/) – for mesh handling and export  
+- [NumPy](https://numpy.org/) – for numerical operations  
+
+## Example Workflows
+
+- Load a scanned object point cloud and estimate normals.  
+- Reconstruct a watertight mesh using **Poisson Surface Reconstruction**.  
+- Use **Ball Pivoting** to generate a mesh that preserves fine details.  
+- Experiment with **Alpha Shapes** to control surface tightness with different radii.  
+- Save the reconstructed mesh and visualize it in external 3D software.  
+
+## Getting Started
+
+To run the examples, install the required libraries:
+
+```bash
+pip install open3d trimesh numpy
