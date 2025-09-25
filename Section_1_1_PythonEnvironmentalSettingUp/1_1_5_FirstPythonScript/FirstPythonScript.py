@@ -11,7 +11,7 @@ def printInformation():
 
     # Print information
     print("Printing information ...");
-    print("\t This is the first information.")
+    print("\t This is the first information.");
 
     # Finished processing
     print("Finished processing.");

@@ -908,6 +908,6 @@ def write3DTriangleSurfaceMesh_toOFFFile():
 #******************************************************************************************************************#
 def main():
     os.system("cls");
-    write3DTriangleSurfaceMesh_toOFFFile();
+    read3DPointCloud_fromPLYFile();
 if __name__ == "__main__":
     main()

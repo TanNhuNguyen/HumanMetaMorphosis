@@ -666,6 +666,6 @@ def computeNormalsForAPointCloud_usingTrimesh():
 #******************************************************************************************************************#
 def main():
     os.system("cls");
-    computeNormalsForAPointCloud_usingTrimesh();
+    computeNormalsForAPointCloud_usingPyVista();
 if __name__ == "__main__":
     main()

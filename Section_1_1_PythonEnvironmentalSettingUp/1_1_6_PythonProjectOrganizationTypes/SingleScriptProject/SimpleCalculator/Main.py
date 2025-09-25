@@ -70,7 +70,7 @@ def processingStep_2():
     print("main::processingStep_2:: Adding two numbers ...");
     number1 = 10; number2 = 20;
     result = addTwoNumbers(number1, number2);
-    print("\t Number 1: ", number2);
+    print("\t Number 1: ", number1);
     print("\t Number 2: ", number2);
     print("\t Resut: ", result);
 
@@ -128,6 +128,6 @@ def processingStep_4():
 #********************************************* MAIN FUNCTION *********************************************#
 #*********************************************************************************************************#
 def main():
-    processingStep_1();
+    processingStep_4();
 if __name__ == "__main__":
     main();
